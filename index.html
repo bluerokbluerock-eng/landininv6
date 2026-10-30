@@ -1,0 +1,2059 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>Inversión inteligente · Asesoría financiera gratuita</title>
+    <meta
+      name="description"
+      content="Reserve su sesión de asesoría financiera personalizada y conozca una propuesta de gestión de capital."
+    />
+    <meta name="theme-color" content="#0B0D11" />
+    <link
+      rel="preload"
+      href="assets/fonts/fraunces-normal-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/inter-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div style="background: #0b0d11; min-height: 100vh; color: #e2ddd3">
+      <section
+        style="position: relative; display: flex; flex-direction: column"
+      >
+        <div style="position: absolute; inset: 0; overflow: hidden">
+          <img
+            src="assets/hero.jpg"
+            alt="Montañas oscuras"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center 30%;
+            "
+          />
+          <div
+            style="
+              position: absolute;
+              inset: 0;
+              background: linear-gradient(
+                to bottom,
+                rgba(11, 13, 17, 0.65) 0%,
+                rgba(11, 13, 17, 0.82) 50%,
+                rgba(11, 13, 17, 0.97) 100%
+              );
+            "
+          ></div>
+        </div>
+        <div
+          style="
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 2.5rem;
+            width: 100%;
+          "
+        >
+          <div style="text-align: center">
+            <div
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                background: rgba(184, 150, 62, 0.1);
+                border: 1px solid rgba(184, 150, 62, 0.22);
+                padding: 0.35rem 0.9rem;
+                margin-bottom: 2rem;
+                margin-top: 20px;
+              "
+            >
+              <span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.6rem;
+                  letter-spacing: 0.14em;
+                  text-transform: uppercase;
+                  color: #c9a84c;
+                "
+                >Acceso gratuito · Cupos limitados</span
+              >
+            </div>
+            <h1
+              style="
+                font-family: Fraunces, Georgia, serif;
+                font-weight: 300;
+                color: #e2ddd3;
+                line-height: 1.1;
+                margin-bottom: 1.25rem;
+                font-size: clamp(2rem, 5vw, 3.4rem);
+                letter-spacing: -0.015em;
+              "
+            >
+              Inversión inteligente,
+              <em style="font-style: italic; color: #c9a84c"
+                >futuro asegurado</em
+              >
+            </h1>
+            <p
+              style="
+                font-family: Inter, sans-serif;
+                font-size: clamp(0.9rem, 2vw, 1.05rem);
+                color: #9e9a90;
+                line-height: 1.75;
+                margin-bottom: 2.5rem;
+                max-width: 480px;
+                margin: 0 auto 2.5rem;
+              "
+            >
+              Reserve hoy su asesoría financiera personalizada sin costo alguno.
+              Aprenda a estructurar su capital y a tomar decisiones con total
+              seguridad.
+            </p>
+            <form
+              id="lead-form"
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+                max-width: 400px;
+                margin: 0 auto;
+              "
+            >
+              <input
+                id="lead-name"
+                name="name"
+                aria-label="Nombre completo"
+                autocomplete="name"
+                type="text"
+                placeholder="Nombre completo"
+                required=""
+                style="
+                  background: rgba(17, 20, 24, 0.8);
+                  border: 1px solid rgba(184, 150, 62, 0.22);
+                  color: #e2ddd3;
+                  font-family: Inter, sans-serif;
+                  font-size: 0.875rem;
+                  padding: 0.8rem 1rem;
+                  outline: none;
+                  border-radius: 1px;
+                  backdrop-filter: blur(8px);
+                  transition: border-color 0.18s;
+                  width: 100%;
+                "
+                value=""
+              /><input
+                id="lead-email"
+                name="email"
+                aria-label="Correo electrónico"
+                autocomplete="email"
+                type="email"
+                placeholder="Correo electrónico"
+                required=""
+                style="
+                  background: rgba(17, 20, 24, 0.8);
+                  border: 1px solid rgba(184, 150, 62, 0.22);
+                  color: #e2ddd3;
+                  font-family: Inter, sans-serif;
+                  font-size: 0.875rem;
+                  padding: 0.8rem 1rem;
+                  outline: none;
+                  border-radius: 1px;
+                  backdrop-filter: blur(8px);
+                  transition: border-color 0.18s;
+                  width: 100%;
+                "
+                value=""
+              /><input
+                id="lead-phone"
+                name="phone"
+                aria-label="WhatsApp (con código de país)"
+                autocomplete="tel"
+                type="tel"
+                placeholder="WhatsApp (con código de país)"
+                required=""
+                style="
+                  background: rgba(17, 20, 24, 0.8);
+                  border: 1px solid rgba(184, 150, 62, 0.22);
+                  color: #e2ddd3;
+                  font-family: Inter, sans-serif;
+                  font-size: 0.875rem;
+                  padding: 0.8rem 1rem;
+                  outline: none;
+                  border-radius: 1px;
+                  backdrop-filter: blur(8px);
+                  transition: border-color 0.18s;
+                  width: 100%;
+                "
+                value=""
+              /><input
+                id="lead-dob"
+                name="dob"
+                aria-label="Fecha de nacimiento"
+                autocomplete="bday"
+                type="date"
+                placeholder=""
+                required=""
+                style="
+                  background: rgba(17, 20, 24, 0.8);
+                  border: 1px solid rgba(184, 150, 62, 0.22);
+                  color: #e2ddd3;
+                  font-family: Inter, sans-serif;
+                  font-size: 0.875rem;
+                  padding: 0.8rem 1rem;
+                  outline: none;
+                  border-radius: 1px;
+                  backdrop-filter: blur(8px);
+                  transition: border-color 0.18s;
+                  width: 100%;
+                "
+                value=""
+              /><select
+                id="lead-country"
+                name="country"
+                aria-label="País"
+                autocomplete="country-name"
+                required=""
+                style="
+                  background: rgba(17, 20, 24, 0.8);
+                  border: 1px solid rgba(184, 150, 62, 0.22);
+                  color: #3a3835;
+                  font-family: Inter, sans-serif;
+                  font-size: 0.875rem;
+                  padding: 0.8rem 1rem;
+                  outline: none;
+                  border-radius: 1px;
+                  backdrop-filter: blur(8px);
+                  transition: border-color 0.18s;
+                  width: 100%;
+                  cursor: pointer;
+                  appearance: none;
+                  background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; width=&#x27;12&#x27; height=&#x27;8&#x27; viewBox=&#x27;0 0 12 8&#x27;%3E%3Cpath d=&#x27;M1 1l5 5 5-5&#x27; stroke=&#x27;%23B8963E&#x27; stroke-width=&#x27;1.5&#x27; fill=&#x27;none&#x27; stroke-linecap=&#x27;round&#x27;/%3E%3C/svg%3E&quot;);
+                  background-repeat: no-repeat;
+                  background-position: right 1rem center;
+                "
+              >
+                <option value="" disabled="" selected="">País</option>
+                <option
+                  value="Argentina"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Argentina
+                </option>
+                <option
+                  value="Bolivia"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Bolivia
+                </option>
+                <option
+                  value="Chile"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Chile
+                </option>
+                <option
+                  value="Colombia"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Colombia
+                </option>
+                <option
+                  value="Costa Rica"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Costa Rica
+                </option>
+                <option
+                  value="Cuba"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Cuba
+                </option>
+                <option
+                  value="Ecuador"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Ecuador
+                </option>
+                <option
+                  value="El Salvador"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  El Salvador
+                </option>
+                <option
+                  value="España"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  España
+                </option>
+                <option
+                  value="Guatemala"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Guatemala
+                </option>
+                <option
+                  value="Guinea Ecuatorial"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Guinea Ecuatorial
+                </option>
+                <option
+                  value="Honduras"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Honduras
+                </option>
+                <option
+                  value="México"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  México
+                </option>
+                <option
+                  value="Nicaragua"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Nicaragua
+                </option>
+                <option
+                  value="Panamá"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Panamá
+                </option>
+                <option
+                  value="Paraguay"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Paraguay
+                </option>
+                <option
+                  value="Perú"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Perú
+                </option>
+                <option
+                  value="Puerto Rico"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Puerto Rico
+                </option>
+                <option
+                  value="República Dominicana"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  República Dominicana
+                </option>
+                <option
+                  value="Uruguay"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Uruguay
+                </option>
+                <option
+                  value="Venezuela"
+                  style="background: #111418; color: #e2ddd3"
+                >
+                  Venezuela
+                </option></select
+              ><button
+                type="submit"
+                style="
+                  background: #b8963e;
+                  color: #0b0d11;
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-weight: 700;
+                  font-size: 0.72rem;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  padding: 1rem;
+                  border: none;
+                  cursor: pointer;
+                  border-radius: 1px;
+                  transition:
+                    background 0.18s,
+                    transform 0.12s;
+                  margin-top: 0.25rem;
+                "
+              >
+                Comenzar inversión inteligente
+              </button>
+              <p
+                id="form-status"
+                role="status"
+                aria-live="polite"
+                hidden=""
+              ></p>
+              <span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.6rem;
+                  letter-spacing: 0.14em;
+                  text-transform: uppercase;
+                  color: #3a3835;
+                "
+                >Sin costo · Sin compromiso · Confidencial</span
+              >
+            </form>
+          </div>
+        </div>
+      </section>
+      <section
+        style="
+          background: #0d1016;
+          border-top: 1px solid rgba(184, 150, 62, 0.22);
+          border-bottom: 1px solid rgba(184, 150, 62, 0.22);
+        "
+      >
+        <div style="max-width: 1100px; margin: 0 auto; padding: 4rem 1.5rem">
+          <div style="margin-bottom: 3.5rem">
+            <div style="text-align: center; margin-bottom: 1.5rem">
+              <p
+                style="
+                  font-family: Fraunces, Georgia, serif;
+                  font-size: clamp(1rem, 2.5vw, 1.25rem);
+                  font-weight: 300;
+                  color: #e2ddd3;
+                  line-height: 1.4;
+                  margin: 0;
+                "
+              >
+                No pierdas la oportunidad de una
+                <em style="font-style: italic; color: #c9a84c"
+                  >guía financiera gratuita</em
+                >
+                por nuestros asesores
+              </p>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 0;
+              "
+            >
+              <div style="display: flex; align-items: flex-start">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                  "
+                >
+                  <div
+                    style="
+                      background: #1a1d22;
+                      border: 1px solid #c9a84c;
+                      width: clamp(54px, 12vw, 72px);
+                      height: clamp(54px, 12vw, 72px);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      border-radius: 4px;
+                    "
+                  >
+                    <span
+                      style="
+                        font-family:
+                          JetBrains Mono,
+                          monospace;
+                        font-size: clamp(1.2rem, 4vw, 1.7rem);
+                        font-weight: 700;
+                        color: #c9a84c;
+                        line-height: 1;
+                      "
+                      ><span data-countdown-part="horas">00</span></span
+                    >
+                  </div>
+                  <span
+                    style="
+                      font-family:
+                        JetBrains Mono,
+                        monospace;
+                      font-size: 0.6rem;
+                      letter-spacing: 0.14em;
+                      text-transform: uppercase;
+                      color: #6b6760;
+                    "
+                    >Horas</span
+                  >
+                </div>
+                <span
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: clamp(1rem, 3vw, 1.4rem);
+                    font-weight: 700;
+                    color: rgba(201, 168, 76, 0.45);
+                    line-height: 1;
+                    margin: 0 3px;
+                    padding-top: clamp(14px, 3vw, 20px);
+                  "
+                  >:</span
+                >
+              </div>
+              <div style="display: flex; align-items: flex-start">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                  "
+                >
+                  <div
+                    style="
+                      background: #1a1d22;
+                      border: 1px solid #c9a84c;
+                      width: clamp(54px, 12vw, 72px);
+                      height: clamp(54px, 12vw, 72px);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      border-radius: 4px;
+                    "
+                  >
+                    <span
+                      style="
+                        font-family:
+                          JetBrains Mono,
+                          monospace;
+                        font-size: clamp(1.2rem, 4vw, 1.7rem);
+                        font-weight: 700;
+                        color: #c9a84c;
+                        line-height: 1;
+                      "
+                      ><span data-countdown-part="min">07</span></span
+                    >
+                  </div>
+                  <span
+                    style="
+                      font-family:
+                        JetBrains Mono,
+                        monospace;
+                      font-size: 0.6rem;
+                      letter-spacing: 0.14em;
+                      text-transform: uppercase;
+                      color: #6b6760;
+                    "
+                    >Min</span
+                  >
+                </div>
+                <span
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: clamp(1rem, 3vw, 1.4rem);
+                    font-weight: 700;
+                    color: rgba(201, 168, 76, 0.45);
+                    line-height: 1;
+                    margin: 0 3px;
+                    padding-top: clamp(14px, 3vw, 20px);
+                  "
+                  >:</span
+                >
+              </div>
+              <div style="display: flex; align-items: flex-start">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                  "
+                >
+                  <div
+                    style="
+                      background: #1a1d22;
+                      border: 1px solid #c9a84c;
+                      width: clamp(54px, 12vw, 72px);
+                      height: clamp(54px, 12vw, 72px);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      border-radius: 4px;
+                    "
+                  >
+                    <span
+                      style="
+                        font-family:
+                          JetBrains Mono,
+                          monospace;
+                        font-size: clamp(1.2rem, 4vw, 1.7rem);
+                        font-weight: 700;
+                        color: #c9a84c;
+                        line-height: 1;
+                      "
+                      ><span data-countdown-part="seg">00</span></span
+                    >
+                  </div>
+                  <span
+                    style="
+                      font-family:
+                        JetBrains Mono,
+                        monospace;
+                      font-size: 0.6rem;
+                      letter-spacing: 0.14em;
+                      text-transform: uppercase;
+                      color: #6b6760;
+                    "
+                    >Seg</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="border-top: 1px solid rgba(184, 150, 62, 0.22); margin: 0"
+          ></div>
+          <div
+            style="
+              margin-top: 3rem;
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+              gap: 2.5rem;
+              align-items: start;
+            "
+          >
+            <div>
+              <span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.6rem;
+                  letter-spacing: 0.14em;
+                  text-transform: uppercase;
+                  color: #c9a84c;
+                "
+                >Cupos exclusivos disponibles</span
+              >
+              <div
+                style="
+                  margin: 0.75rem 0;
+                  display: flex;
+                  align-items: baseline;
+                  gap: 0.5rem;
+                "
+              >
+                <span
+                  style="
+                    font-family: Fraunces, Georgia, serif;
+                    font-size: clamp(3rem, 8vw, 4.5rem);
+                    font-weight: 300;
+                    color: #e2ddd3;
+                    line-height: 1;
+                  "
+                  >4</span
+                ><span
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: 0.7rem;
+                    color: #6b6760;
+                  "
+                  >/ 796</span
+                >
+              </div>
+              <p
+                style="
+                  font-family: Inter, sans-serif;
+                  font-size: 0.8rem;
+                  color: #6b6760;
+                  line-height: 1.7;
+                  border-left: 2px solid rgba(184, 150, 62, 0.22);
+                  padding-left: 0.75rem;
+                "
+              >
+                Los cupos se asignan en orden de llegada. Al completarse, la
+                próxima apertura tendrá costo de asesoría estándar.
+              </p>
+            </div>
+            <div style="padding-top: 0.5rem">
+              <div
+                style="
+                  position: relative;
+                  height: 10px;
+                  background: rgba(184, 150, 62, 0.12);
+                  border-radius: 2px;
+                  overflow: hidden;
+                  margin-bottom: 0.6rem;
+                "
+              >
+                <div
+                  style="
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 99.49748743718592%;
+                    background: linear-gradient(to right, #b8963e, #c9a84c);
+                    border-radius: 2px;
+                    transition: width 0.6s ease;
+                  "
+                ></div>
+              </div>
+              <div style="display: flex; justify-content: space-between">
+                <span
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: 0.6rem;
+                    letter-spacing: 0.14em;
+                    text-transform: uppercase;
+                    color: #3a3835;
+                  "
+                  >792 ocupados</span
+                ><span
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: 0.6rem;
+                    letter-spacing: 0.14em;
+                    text-transform: uppercase;
+                    color: #c9a84c;
+                  "
+                  >4 disponibles</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        style="
+          background: #0d1016;
+          border-top: 1px solid rgba(184, 150, 62, 0.22);
+          border-bottom: 1px solid rgba(184, 150, 62, 0.22);
+        "
+      >
+        <div style="max-width: 1100px; margin: 0 auto; padding: 3.5rem 1.5rem">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+              gap: 1px;
+              background: rgba(184, 150, 62, 0.22);
+              margin-bottom: 3rem;
+            "
+          >
+            <div style="background: #0d1016; padding: 2rem 1.5rem">
+              <div
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+                  font-weight: 700;
+                  color: #c9a84c;
+                  line-height: 1;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                +18.7%
+              </div>
+              <div
+                style="
+                  font-family: Inter, sans-serif;
+                  font-size: 0.82rem;
+                  color: #e2ddd3;
+                  margin-bottom: 3px;
+                "
+              >
+                Rendimiento anual promedio
+              </div>
+              <span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.6rem;
+                  letter-spacing: 0.14em;
+                  text-transform: uppercase;
+                  color: #6b6760;
+                "
+                >Histórico · 36 meses</span
+              >
+            </div>
+            <div style="background: #0d1016; padding: 2rem 1.5rem">
+              <div
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+                  font-weight: 700;
+                  color: #c9a84c;
+                  line-height: 1;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                +3.4K
+              </div>
+              <div
+                style="
+                  font-family: Inter, sans-serif;
+                  font-size: 0.82rem;
+                  color: #e2ddd3;
+                  margin-bottom: 3px;
+                "
+              >
+                Inversores activos
+              </div>
+              <span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.6rem;
+                  letter-spacing: 0.14em;
+                  text-transform: uppercase;
+                  color: #6b6760;
+                "
+                >En 12 países</span
+              >
+            </div>
+            <div style="background: #0d1016; padding: 2rem 1.5rem">
+              <div
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+                  font-weight: 700;
+                  color: #c9a84c;
+                  line-height: 1;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                +2.2%
+              </div>
+              <div
+                style="
+                  font-family: Inter, sans-serif;
+                  font-size: 0.82rem;
+                  color: #e2ddd3;
+                  margin-bottom: 3px;
+                "
+              >
+                Rendimiento mensual promedio
+              </div>
+              <span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.6rem;
+                  letter-spacing: 0.14em;
+                  text-transform: uppercase;
+                  color: #6b6760;
+                "
+                >Ciclos completados</span
+              >
+            </div>
+          </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+              gap: 3rem;
+              align-items: start;
+            "
+          >
+            <div>
+              <span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.6rem;
+                  letter-spacing: 0.14em;
+                  text-transform: uppercase;
+                  color: #6b6760;
+                "
+                >Nuestro proceso de inversión</span
+              >
+              <h2
+                style="
+                  font-family: Fraunces, Georgia, serif;
+                  font-size: clamp(1.5rem, 3vw, 2.1rem);
+                  font-weight: 300;
+                  color: #e2ddd3;
+                  line-height: 1.25;
+                  margin: 0.75rem 0 1rem;
+                  max-width: 400px;
+                "
+              >
+                De la asesoría al primer rendimiento en un solo ciclo.
+              </h2>
+              <p
+                style="
+                  font-family: Inter, sans-serif;
+                  font-size: 0.875rem;
+                  color: #9e9a90;
+                  line-height: 1.8;
+                "
+              >
+                Diseñado para empresarios que valoran su tiempo. Sin curvas de
+                aprendizaje, sin monitoreo diario, sin complejidad técnica.
+              </p>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0">
+              <div
+                style="
+                  display: flex;
+                  gap: 1.25rem;
+                  padding: 1.5rem 0;
+                  border-bottom: 1px solid rgba(184, 150, 62, 0.08);
+                "
+              >
+                <div
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    color: #c9a84c;
+                    flex-shrink: 0;
+                    padding-top: 2px;
+                    min-width: 28px;
+                  "
+                >
+                  01
+                </div>
+                <div>
+                  <div
+                    style="
+                      font-family: Inter, sans-serif;
+                      font-size: 0.9rem;
+                      font-weight: 600;
+                      color: #e2ddd3;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    Sesión de diagnóstico gratuita
+                  </div>
+                  <p
+                    style="
+                      font-family: Inter, sans-serif;
+                      font-size: 0.8rem;
+                      color: #9e9a90;
+                      line-height: 1.7;
+                      margin: 0;
+                    "
+                  >
+                    Analizamos su situación financiera actual, capital
+                    disponible y objetivos de crecimiento en una llamada de 45
+                    minutos.
+                  </p>
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 1.25rem;
+                  padding: 1.5rem 0;
+                  border-bottom: 1px solid rgba(184, 150, 62, 0.08);
+                "
+              >
+                <div
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    color: #c9a84c;
+                    flex-shrink: 0;
+                    padding-top: 2px;
+                    min-width: 28px;
+                  "
+                >
+                  02
+                </div>
+                <div>
+                  <div
+                    style="
+                      font-family: Inter, sans-serif;
+                      font-size: 0.9rem;
+                      font-weight: 600;
+                      color: #e2ddd3;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    Hoja de ruta personalizada
+                  </div>
+                  <p
+                    style="
+                      font-family: Inter, sans-serif;
+                      font-size: 0.8rem;
+                      color: #9e9a90;
+                      line-height: 1.7;
+                      margin: 0;
+                    "
+                  >
+                    Recibe un plan estructurado con proyecciones reales, montos
+                    sugeridos y cronograma de rendimiento esperado.
+                  </p>
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 1.25rem;
+                  padding: 1.5rem 0;
+                  border-bottom: none;
+                "
+              >
+                <div
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    color: #c9a84c;
+                    flex-shrink: 0;
+                    padding-top: 2px;
+                    min-width: 28px;
+                  "
+                >
+                  03
+                </div>
+                <div>
+                  <div
+                    style="
+                      font-family: Inter, sans-serif;
+                      font-size: 0.9rem;
+                      font-weight: 600;
+                      color: #e2ddd3;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    Asignación de capital al fondo
+                  </div>
+                  <p
+                    style="
+                      font-family: Inter, sans-serif;
+                      font-size: 0.8rem;
+                      color: #9e9a90;
+                      line-height: 1.7;
+                      margin: 0;
+                    "
+                  >
+                    Si decide proceder, su capital se asigna al fondo regulado.
+                    La gestión es 100% automatizada desde ese momento.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="max-width: 1100px; margin: 0 auto; padding: 5rem 1.5rem">
+        <div style="text-align: center; margin-bottom: 3.5rem">
+          <span
+            style="
+              font-family:
+                JetBrains Mono,
+                monospace;
+              font-size: 0.6rem;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+              color: #6b6760;
+            "
+            >Casos de éxito · Testimonios inversores</span
+          >
+          <h2
+            style="
+              font-family: Fraunces, Georgia, serif;
+              font-size: clamp(1.5rem, 3vw, 2.2rem);
+              font-weight: 300;
+              color: #e2ddd3;
+              margin-top: 0.75rem;
+              line-height: 1.2;
+            "
+          >
+            Resultados reales de personas reales
+          </h2>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1px;
+            background: rgba(184, 150, 62, 0.22);
+          "
+        >
+          <div
+            data-testimonial=""
+            style="
+              background: #111418;
+              padding: 2.5rem 2rem;
+              display: flex;
+              flex-direction: column;
+              transition: background 0.2s;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 1.5rem;
+              "
+            >
+              <div
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 2rem;
+                  font-weight: 700;
+                  color: #c9a84c;
+                  line-height: 1;
+                "
+              >
+                +32.4%
+              </div>
+              <span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.58rem;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: #6b6760;
+                  background: rgba(184, 150, 62, 0.08);
+                  border: 1px solid rgba(184, 150, 62, 0.22);
+                  padding: 3px 8px;
+                "
+                >18 meses</span
+              >
+            </div>
+            <p
+              style="
+                font-family: Inter, sans-serif;
+                font-size: 0.875rem;
+                color: #9e9a90;
+                line-height: 1.8;
+                flex-grow: 1;
+                margin-bottom: 1.75rem;
+              "
+            >
+              &quot;Nunca pensé que con $500 podría generar rendimientos reales
+              sin dedicarle tiempo. La sesión fue directa y sin rodeos. Hoy mi
+              liquidez trabaja por mí.&quot;
+            </p>
+            <div
+              style="border-top: 1px solid rgba(184, 150, 62, 0.22); margin: 0"
+            ></div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.875rem;
+                margin-top: 1.25rem;
+              "
+            >
+              <img
+                src="assets/avatar-carlos.jpg"
+                alt="Carlos Mendoza"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                  border: 1px solid rgba(184, 150, 62, 0.22);
+                  flex-shrink: 0;
+                "
+              />
+              <div>
+                <div
+                  style="
+                    font-family: Inter, sans-serif;
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    color: #e2ddd3;
+                  "
+                >
+                  Carlos Mendoza
+                </div>
+                <span
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: 0.6rem;
+                    letter-spacing: 0.14em;
+                    text-transform: uppercase;
+                    color: #6b6760;
+                  "
+                  >Empresario · Bogotá</span
+                >
+              </div>
+            </div>
+            <div style="display: flex; gap: 3px; margin-top: 0.75rem">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path></svg
+              ><svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path></svg
+              ><svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path></svg
+              ><svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path></svg
+              ><svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            data-testimonial=""
+            style="
+              background: #111418;
+              padding: 2.5rem 2rem;
+              display: flex;
+              flex-direction: column;
+              transition: background 0.2s;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 1.5rem;
+              "
+            >
+              <div
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 2rem;
+                  font-weight: 700;
+                  color: #c9a84c;
+                  line-height: 1;
+                "
+              >
+                +28.1%
+              </div>
+              <span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.58rem;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: #6b6760;
+                  background: rgba(184, 150, 62, 0.08);
+                  border: 1px solid rgba(184, 150, 62, 0.22);
+                  padding: 3px 8px;
+                "
+                >14 meses</span
+              >
+            </div>
+            <p
+              style="
+                font-family: Inter, sans-serif;
+                font-size: 0.875rem;
+                color: #9e9a90;
+                line-height: 1.8;
+                flex-grow: 1;
+                margin-bottom: 1.75rem;
+              "
+            >
+              &quot;Llevaba años con capital estancado en el banco. En 14 meses
+              vi cómo ese dinero creció de forma consistente. El proceso es
+              transparente y los reportes son claros.&quot;
+            </p>
+            <div
+              style="border-top: 1px solid rgba(184, 150, 62, 0.22); margin: 0"
+            ></div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.875rem;
+                margin-top: 1.25rem;
+              "
+            >
+              <img
+                src="assets/avatar-daniela.jpg"
+                alt="Daniela Ríos"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                  border: 1px solid rgba(184, 150, 62, 0.22);
+                  flex-shrink: 0;
+                "
+              />
+              <div>
+                <div
+                  style="
+                    font-family: Inter, sans-serif;
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    color: #e2ddd3;
+                  "
+                >
+                  Daniela Ríos
+                </div>
+                <span
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: 0.6rem;
+                    letter-spacing: 0.14em;
+                    text-transform: uppercase;
+                    color: #6b6760;
+                  "
+                  >Dueña de negocio · CDMX</span
+                >
+              </div>
+            </div>
+            <div style="display: flex; gap: 3px; margin-top: 0.75rem">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path></svg
+              ><svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path></svg
+              ><svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path></svg
+              ><svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path></svg
+              ><svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            data-testimonial=""
+            style="
+              background: #111418;
+              padding: 2.5rem 2rem;
+              display: flex;
+              flex-direction: column;
+              transition: background 0.2s;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 1.5rem;
+              "
+            >
+              <div
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 2rem;
+                  font-weight: 700;
+                  color: #c9a84c;
+                  line-height: 1;
+                "
+              >
+                +21.7%
+              </div>
+              <span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.58rem;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: #6b6760;
+                  background: rgba(184, 150, 62, 0.08);
+                  border: 1px solid rgba(184, 150, 62, 0.22);
+                  padding: 3px 8px;
+                "
+                >11 meses</span
+              >
+            </div>
+            <p
+              style="
+                font-family: Inter, sans-serif;
+                font-size: 0.875rem;
+                color: #9e9a90;
+                line-height: 1.8;
+                flex-grow: 1;
+                margin-bottom: 1.75rem;
+              "
+            >
+              &quot;Profesionales altamente capacitados. En ningún momento tuve
+              que preocuparme por el mercado ni por monitorear nada. Los
+              resultados hablan solos.&quot;
+            </p>
+            <div
+              style="border-top: 1px solid rgba(184, 150, 62, 0.22); margin: 0"
+            ></div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.875rem;
+                margin-top: 1.25rem;
+              "
+            >
+              <img
+                src="assets/avatar-andres.jpg"
+                alt="Andrés Palomino"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                  border: 1px solid rgba(184, 150, 62, 0.22);
+                  flex-shrink: 0;
+                "
+              />
+              <div>
+                <div
+                  style="
+                    font-family: Inter, sans-serif;
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    color: #e2ddd3;
+                  "
+                >
+                  Andrés Palomino
+                </div>
+                <span
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: 0.6rem;
+                    letter-spacing: 0.14em;
+                    text-transform: uppercase;
+                    color: #6b6760;
+                  "
+                  >Consultor · Lima</span
+                >
+              </div>
+            </div>
+            <div style="display: flex; gap: 3px; margin-top: 0.75rem">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path></svg
+              ><svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path></svg
+              ><svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path></svg
+              ><svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path></svg
+              ><svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A84C">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        style="
+          background: #0d1016;
+          border-top: 1px solid rgba(184, 150, 62, 0.22);
+        "
+      >
+        <div style="max-width: 800px; margin: 0 auto; padding: 5rem 1.5rem">
+          <div style="text-align: center; margin-bottom: 3rem">
+            <span
+              style="
+                font-family:
+                  JetBrains Mono,
+                  monospace;
+                font-size: 0.6rem;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+                color: #6b6760;
+              "
+              >Preguntas frecuentes</span
+            >
+            <h2
+              style="
+                font-family: Fraunces, Georgia, serif;
+                font-size: clamp(1.4rem, 3vw, 2rem);
+                font-weight: 300;
+                color: #e2ddd3;
+                margin-top: 0.75rem;
+              "
+            >
+              Resolvemos sus dudas antes de la sesión
+            </h2>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 1px">
+            <div
+              data-faq-item=""
+              style="
+                background: transparent;
+                border-bottom: 1px solid rgba(184, 150, 62, 0.1);
+                transition: background 0.2s;
+              "
+            >
+              <button
+                type="button"
+                data-faq-toggle=""
+                id="faq-trigger-0"
+                aria-expanded="false"
+                aria-controls="faq-0"
+                style="
+                  width: 100%;
+                  text-align: left;
+                  padding: 1.25rem 1.5rem;
+                  background: none;
+                  border: none;
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  gap: 1rem;
+                "
+              >
+                <span
+                  data-faq-label=""
+                  style="
+                    font-family: Inter, sans-serif;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    color: #9e9a90;
+                    line-height: 1.4;
+                  "
+                  >¿Cuánto dinero necesito para comenzar?</span
+                ><span
+                  data-faq-icon=""
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: 1rem;
+                    color: #c9a84c;
+                    flex-shrink: 0;
+                    transition: transform 0.2s;
+                    transform: rotate(0deg);
+                  "
+                  >+</span
+                >
+              </button>
+              <div
+                hidden=""
+                id="faq-0"
+                role="region"
+                aria-labelledby="faq-trigger-0"
+                style="padding: 0 1.5rem 1.5rem"
+              >
+                <p
+                  style="
+                    font-family: Inter, sans-serif;
+                    font-size: 0.875rem;
+                    color: #9e9a90;
+                    line-height: 1.8;
+                    margin: 0;
+                  "
+                >
+                  El mínimo de entrada es $200 USD. No hay un máximo
+                  establecido. Puede comenzar con el capital que tenga
+                  disponible sin comprometer su operación mensual.
+                </p>
+              </div>
+            </div>
+            <div
+              data-faq-item=""
+              style="
+                background: transparent;
+                border-bottom: 1px solid rgba(184, 150, 62, 0.1);
+                transition: background 0.2s;
+              "
+            >
+              <button
+                type="button"
+                data-faq-toggle=""
+                id="faq-trigger-1"
+                aria-expanded="false"
+                aria-controls="faq-1"
+                style="
+                  width: 100%;
+                  text-align: left;
+                  padding: 1.25rem 1.5rem;
+                  background: none;
+                  border: none;
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  gap: 1rem;
+                "
+              >
+                <span
+                  data-faq-label=""
+                  style="
+                    font-family: Inter, sans-serif;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    color: #9e9a90;
+                    line-height: 1.4;
+                  "
+                  >¿Necesito saber de mercados financieros o trading?</span
+                ><span
+                  data-faq-icon=""
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: 1rem;
+                    color: #c9a84c;
+                    flex-shrink: 0;
+                    transition: transform 0.2s;
+                    transform: rotate(0deg);
+                  "
+                  >+</span
+                >
+              </button>
+              <div
+                hidden=""
+                id="faq-1"
+                role="region"
+                aria-labelledby="faq-trigger-1"
+                style="padding: 0 1.5rem 1.5rem"
+              >
+                <p
+                  style="
+                    font-family: Inter, sans-serif;
+                    font-size: 0.875rem;
+                    color: #9e9a90;
+                    line-height: 1.8;
+                    margin: 0;
+                  "
+                >
+                  No. El modelo está diseñado para empresarios y profesionales
+                  sin conocimiento técnico de mercados. Nuestro equipo gestiona
+                  todo de forma automatizada. Usted no necesita operar, analizar
+                  ni monitorear nada.
+                </p>
+              </div>
+            </div>
+            <div
+              data-faq-item=""
+              style="
+                background: transparent;
+                border-bottom: 1px solid rgba(184, 150, 62, 0.1);
+                transition: background 0.2s;
+              "
+            >
+              <button
+                type="button"
+                data-faq-toggle=""
+                id="faq-trigger-2"
+                aria-expanded="false"
+                aria-controls="faq-2"
+                style="
+                  width: 100%;
+                  text-align: left;
+                  padding: 1.25rem 1.5rem;
+                  background: none;
+                  border: none;
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  gap: 1rem;
+                "
+              >
+                <span
+                  data-faq-label=""
+                  style="
+                    font-family: Inter, sans-serif;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    color: #9e9a90;
+                    line-height: 1.4;
+                  "
+                  >¿Qué sucede si no me convence la sesión de diagnóstico?</span
+                ><span
+                  data-faq-icon=""
+                  style="
+                    font-family:
+                      JetBrains Mono,
+                      monospace;
+                    font-size: 1rem;
+                    color: #c9a84c;
+                    flex-shrink: 0;
+                    transition: transform 0.2s;
+                    transform: rotate(0deg);
+                  "
+                  >+</span
+                >
+              </button>
+              <div
+                hidden=""
+                id="faq-2"
+                role="region"
+                aria-labelledby="faq-trigger-2"
+                style="padding: 0 1.5rem 1.5rem"
+              >
+                <p
+                  style="
+                    font-family: Inter, sans-serif;
+                    font-size: 0.875rem;
+                    color: #9e9a90;
+                    line-height: 1.8;
+                    margin: 0;
+                  "
+                >
+                  Absolutamente nada. La sesión es 100% gratuita y sin
+                  compromiso. Si al finalizar decide no proceder, no hay ningún
+                  tipo de obligación ni cargo. El cupo se reserva sin
+                  condiciones.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="captura"></div>
+      <section
+        style="
+          background: #111418;
+          border-top: 1px solid rgba(184, 150, 62, 0.22);
+          padding: 5rem 1.5rem;
+          text-align: center;
+        "
+      >
+        <div style="max-width: 640px; margin: 0 auto">
+          <span
+            style="
+              font-family:
+                JetBrains Mono,
+                monospace;
+              font-size: 0.6rem;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+              color: #6b6760;
+            "
+            >¿Listo para comenzar?</span
+          >
+          <h2
+            style="
+              font-family: Fraunces, Georgia, serif;
+              font-size: clamp(1.6rem, 4vw, 2.6rem);
+              font-weight: 300;
+              color: #e2ddd3;
+              line-height: 1.2;
+              margin: 0.75rem 0 1.25rem;
+            "
+          >
+            ¿Listo para comenzar a proteger tu patrimonio?
+          </h2>
+          <p
+            style="
+              font-family: Inter, sans-serif;
+              font-size: 0.9rem;
+              color: #9e9a90;
+              line-height: 1.8;
+              margin-bottom: 2.5rem;
+            "
+          >
+            Quedan
+            <span style="color: #c9a84c; font-weight: 500"
+              >4 cupos disponibles</span
+            >. Cada día que posterga es un ciclo de rendimiento que no acumula.
+          </p>
+          <button
+            type="button"
+            data-action="go-to-form"
+            style="
+              background: #b8963e;
+              color: #0b0d11;
+              font-family:
+                JetBrains Mono,
+                monospace;
+              font-weight: 700;
+              font-size: 0.78rem;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              padding: 1.15rem 3rem;
+              border: none;
+              cursor: pointer;
+              border-radius: 1px;
+              transition:
+                background 0.18s,
+                transform 0.12s;
+            "
+          >
+            Quiero invertir ahora
+          </button>
+          <div
+            style="
+              margin-top: 2rem;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1.5rem;
+              justify-content: center;
+            "
+          >
+            <div style="display: flex; align-items: center; gap: 0.4rem">
+              <span style="color: #c9a84c; font-size: 0.6rem">◆</span
+              ><span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.6rem;
+                  letter-spacing: 0.14em;
+                  text-transform: uppercase;
+                  color: #6b6760;
+                "
+                >Sin costo inicial</span
+              >
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.4rem">
+              <span style="color: #c9a84c; font-size: 0.6rem">◆</span
+              ><span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.6rem;
+                  letter-spacing: 0.14em;
+                  text-transform: uppercase;
+                  color: #6b6760;
+                "
+                >Fondo regulado</span
+              >
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.4rem">
+              <span style="color: #c9a84c; font-size: 0.6rem">◆</span
+              ><span
+                style="
+                  font-family:
+                    JetBrains Mono,
+                    monospace;
+                  font-size: 0.6rem;
+                  letter-spacing: 0.14em;
+                  text-transform: uppercase;
+                  color: #6b6760;
+                "
+                >Sin permanencia forzosa</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <style>
+        @keyframes slideIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px) scale(0.98);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+        @keyframes pulse {
+          0%,
+          100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.35;
+          }
+        }
+        input[type="&quot;range&quot;"] {
+          height: 4px;
+        }
+        input[type="&quot;date&quot;"]::-webkit-calendar-picker-indicator {
+          filter: invert(0.4) sepia(1) hue-rotate(10deg) saturate(3);
+          opacity: 0.6;
+          cursor: pointer;
+        }
+        input::placeholder {
+          color: #3a3835;
+        }
+      </style>
+    </div>
+    <dialog
+      id="confirmation-modal"
+      aria-labelledby="confirmation-title"
+      style="
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.88);
+        backdrop-filter: blur(4px);
+        z-index: 60;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+      "
+    >
+      <div
+        style="
+          background: #111418;
+          border: 1px solid rgba(184, 150, 62, 0.22);
+          padding: 3rem 2.5rem;
+          max-width: 420px;
+          width: 100%;
+          border-radius: 2px;
+          text-align: center;
+          animation: slideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+        "
+      >
+        <div
+          style="
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            border: 2px solid #c9a84c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+          "
+        >
+          <span style="color: #c9a84c; font-size: 1.25rem">✓</span>
+        </div>
+        <span
+          style="
+            font-family:
+              JetBrains Mono,
+              monospace;
+            font-size: 0.6rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #c9a84c;
+          "
+          >Solicitud recibida</span
+        >
+        <h3
+          id="confirmation-title"
+          style="
+            font-family: Fraunces, Georgia, serif;
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #e2ddd3;
+            margin: 0.75rem 0 1rem;
+            line-height: 1.3;
+          "
+        >
+          Su cupo ha sido apartado
+        </h3>
+        <p
+          style="
+            font-family: Inter, sans-serif;
+            font-size: 0.875rem;
+            color: #9e9a90;
+            line-height: 1.75;
+            margin-bottom: 2rem;
+          "
+        >
+          Recibirá confirmación en su WhatsApp dentro de las próximas 2 horas
+          hábiles con el enlace y horario de su sesión de diagnóstico.
+        </p>
+        <button
+          type="button"
+          data-action="close-confirmation"
+          style="
+            background: #b8963e;
+            color: #0b0d11;
+            font-family:
+              JetBrains Mono,
+              monospace;
+            font-weight: 700;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.85rem 2rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 1px;
+          "
+        >
+          Entendido
+        </button>
+        <div style="margin-top: 1.25rem">
+          <span
+            style="
+              font-family:
+                JetBrains Mono,
+                monospace;
+              font-size: 0.6rem;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+              color: #3a3835;
+            "
+            >No comparta su enlace — su cupo es personal e intransferible</span
+          >
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
