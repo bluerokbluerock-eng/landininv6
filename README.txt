@@ -1,42 +1,42 @@
 LANDININV6 — HTML, CSS Y JAVASCRIPT PUROS
 
 Uso
-Abre index.html directamente o sirve esta carpeta como sitio estático.
-No necesita React, Astro, Node ni compilación del frontend.
-Incluye las fotografías y las fuentes Fraunces, Inter y JetBrains Mono
-localmente, incluida la cursiva y el tamaño óptico de Fraunces.
+La página conserva su diseño original y sus recursos locales. Para que el
+formulario funcione, usa el servidor Node incluido: node --env-file=.env server.mjs
+Requiere Node 24. No necesita dependencias ni compilación del frontend.
+Abrir index.html directamente sirve para revisar el diseño, sin envío de datos.
 
 Subir a Railway
-1. Conecta a Railway el repositorio que contiene esta carpeta.
+1. Conecta el repositorio que contiene esta carpeta a un servicio de Railway.
 2. Si el repositorio es landings, configura Root Directory como /landininv6
-   y la ruta del archivo de configuración como /landininv6/railway.json.
-   Si esta carpeta es la raíz del repositorio, usa los valores predeterminados.
-3. Railway construye el Dockerfile. No agregues comandos de build o inicio.
-   Nginx sirve los archivos en PORT (8080 si no hay uno asignado).
-4. Genera el dominio del servicio en Networking.
-Referencia: https://docs.railway.com/config-as-code/reference
-Esta entrega prepara la carpeta, sin publicar en una cuenta de Railway.
-No se ejecutó Docker en este equipo porque no está instalado.
+   y el archivo de configuración como /landininv6/railway.json.
+3. Railway construye el Dockerfile; no agregues comandos de build o inicio.
+4. En Variables configura GOOGLE_SHEETS_WEBAPP_URL y GOOGLE_SHEETS_TOKEN.
+   Son los mismos valores privados para las seis landings.
+5. Genera el dominio en Networking. El servidor escucha en PORT (8080 por defecto).
+La integración necesita que el receptor Apps Script esté desplegado y autorizado
+en la cuenta de Zaira. Preparar archivos no publica automáticamente en Railway.
 
 Archivos
-index.html       Estructura, contenido, preguntas y modal de confirmación.
-styles.css       Estilos estáticos y adaptación a pantallas.
-script.js        Contador, formulario, preguntas y confirmación condicional.
-assets/          Fotografías, fuentes y licencias.
-Dockerfile       Contenedor de Nginx.
-nginx.conf       Configuración del servidor estático.
-railway.json     Build y comprobación de disponibilidad en la ruta /.
+index.html / styles.css / script.js  Página original y sus interacciones.
+leads-client.js                     Envío y reintentos sin duplicados.
+server.mjs                         Archivos públicos y endpoint /api/leads.
+landing.config.json                Identidad de esta landing en el servidor.
+assets/                            Imágenes, fuentes y licencias.
+Dockerfile / railway.json          Despliegue sin dependencias adicionales.
+.env.example                       Variables de ejemplo, sin claves reales.
+nginx.conf                         Configuración anterior; ya no se utiliza.
 
 Formulario
-El original mostraba un modal de confirmación sin enviar datos a un servidor.
-La conversión valida nombre, correo, WhatsApp, fecha de nacimiento y país.
-Sin un destino configurado, informa que los datos no se han enviado.
-Configura formEndpoint en LANDING_CONFIG, al principio de script.js, con un
-endpoint POST que acepte JSON: name, email, phone, dob y country.
-Solo se abre la confirmación del original cuando el endpoint devuelve un
-estado HTTP satisfactorio. Se cierra con Entendido, Escape o al pulsar el fondo.
-No se guardan datos personales en el navegador. Mantén claves y credenciales
-privadas en el servidor.
+Valida nombre, correo, WhatsApp, país y fecha de nacimiento. El servidor añade
+landininv6 — Inversión inteligente como origen; no acepta una identidad elegida por el cliente.
+La hoja recibe fecha y hora, landing, los cinco campos, página e ID de registro.
+No se guardan datos personales en localStorage ni se publican claves privadas.
+El ID se conserva en memoria si falla un envío y permite reintentar sin duplicar.
+Solo muestra confirmación cuando Google Sheets devuelve el ID guardado. Si falta
+configuración o falla Google, conserva el formulario y permite volver a intentarlo.
+Nunca pongas el token en script.js, index.html o un repositorio. Para uso local,
+copia .env.example a .env y completa las variables; .env está excluido de Git.
 
 Interacciones
 El contador comienza en siete minutos con cada carga y se detiene en cero.
